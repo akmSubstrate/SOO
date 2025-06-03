@@ -1,0 +1,24 @@
+[project]
+name = "SOO"
+version = "0.1.0"
+description = "Self Organizing Orrey - a SOM inspired data visualization and clustering model"
+authors = [
+    {name = "akmSubstrate",email = "andrew.mathau@gmail.com"}
+]
+readme = "README.md"
+packages = [{include = "soo", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "*"
+torch = "*"
+tqdm = "*"
+mayavi = "*"
+pyqt5 = "*"
+jupyter = "*"
+ipywidgets = "*"
+ipyevents = "*"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
